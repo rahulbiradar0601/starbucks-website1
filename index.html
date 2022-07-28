@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="C:\Users\Dell\OneDrive\Pictures\starbucks\logo.png"></a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">what's new</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Starbucks is committed to caring for the health and well-being of our 
+                    partners and customers as we serve our communities through the 
+                    lens of Our Mission and Values</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="C:\Users\Dell\OneDrive\Pictures\starbucks\img1.png" class="starbucks">  
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="C:\Users\Dell\OneDrive\Pictures\starbucks\thumb1.png" onclick="imgSlider('img1.png'); changeCirclecolor('#017143')"></li>
+            <li><img src="C:\Users\Dell\OneDrive\Pictures\starbucks\thumb2.png" onclick="imgSlider('img2.png'); changeCirclecolor('#eb7495')"></li>
+            <li><img src="C:\Users\Dell\OneDrive\Pictures\starbucks\thumb3.png" onclick="imgSlider('img3.png'); changeCirclecolor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="C:\Users\Dell\OneDrive\Pictures\starbucks\facebook.png"></a></li>
+            <li><a href="#"><img src="C:\Users\Dell\OneDrive\Pictures\starbucks\twitter.png"></a></li>
+            <li><a href="#"><img src="C:\Users\Dell\OneDrive\Pictures\starbucks\instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
